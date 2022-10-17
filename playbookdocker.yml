@@ -14,7 +14,7 @@
   - name: install git
     yum: name=git state=present
   - name: clone a repo
-    git: repo=https://https://github.com/Prabir-92/AnsibleDockerproject.git dest=/tmp/mygitrepo1
+    git: repo=https://https://github.com/Sonal0409/AnsibleDockerdemo.git dest=/tmp/mygitrepo1
   - name: build docker file
     command: chdir=/tmp/mygitrepo1 docker build -t prabir92:ansible92 .
   - name: create container
